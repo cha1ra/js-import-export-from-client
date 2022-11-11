@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS読み込み内容検証用のサンプル</h1>
+
+<!-- 直接書く場合 -->
+<script>
+// 例: このスクリプトを 外部に切り出したい場合
+// function hoge() {
+//     console.log('hoge関数です')
+// }
+</script>
+
+<!-- 方法1: 別のJSファイルに分ける-->
+<!-- <script src="./script.js"></script> -->
+
+<!-- 方法2: モジュールとして import/export を使う -->
+<!-- ※この場合、 type="moduleをつけないとエラーになる" -->
+<script src="./module.js" type="module"></script>
+</body>
+</html>
